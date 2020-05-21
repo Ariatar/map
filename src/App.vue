@@ -3,7 +3,7 @@
       <v-container>
          <h1 class="upper-title">Contacts</h1>
          <v-layout class="mb-12">
-            <v-flex lg6 md6 xs class="Contacts">
+            <v-flex class="Contacts">
                <div class="title">
                   <span>GMS</span>
                   <h2>Headquarters</h2>
@@ -40,7 +40,7 @@
                </div>
             </v-flex>
 
-            <v-flex lg6 md6 xs class="Contacts">
+            <v-flex class="Contacts">
                <div class="title">
                   <h2 class="ma-0">Technical support</h2>
                   <span class="innner-support">24/7</span>
@@ -241,6 +241,9 @@ export default {
 </script>
 
 <style lang="scss">
+.layout {
+   display: flex !important;
+}
 .selectable {
    display: none;
 }
@@ -345,7 +348,7 @@ li {
          padding-bottom: 53px;
          ul {
             padding-left: 0 !important;
-            display: flex;
+            display: flex !important;
             li {
                cursor: pointer;
                padding: 0 10px 10px 0;
@@ -437,7 +440,6 @@ li {
    .layout {
       .Contacts {
          .d-flex {
-            display: contents !important;
             .contact {
                margin-left: 0 !important;
             }
@@ -446,8 +448,7 @@ li {
    }
 }
 .layout {
-   display: contents;
-   padding-left: 54px;
+   padding-left: 54px !important;
 }
 
 .contact-number {
